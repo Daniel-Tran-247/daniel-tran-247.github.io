@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Daniel Tran Portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <!-- Logo  -->
+        <a href="#about" onclick="selectOption(0)">
+            <img id='logo' src="Assets/logo/logo_light.png" alt='logo' width="160" weight="160">
+        </a>
+        <!-- Menu Bar -->
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#about" onclick="selectOption(0)">About</a></li>
+                <li><a href="#resume" onclick="selectOption(1)">Resume</a></li>
+                <li><a href="#projects" onclick="selectOption(2)">Projects</a></li>
+                <li><a href="#blogs" onclick="selectOption(3)">Blogs</a></li>
+                <li><a href="#contact" onclick="selectOption(4)">Contact</a></li>
+            </ul>
+        </div>
+        <!-- social sites -->
+        <div class="social">
+            <a href="https://github.com/Daniel-Tran-247" target="_blank" id="github">
+                <i class="fa-brands fa-github fa-2xl"></i>            </a>
+            <a href="https://www.kaggle.com/danielggak/code" target="_blank" id="kaggle">
+                <i class="fa-brands fa-kaggle fa-2xl"></i>
+            </a>
+            <a id="linkedin" href="https://www.linkedin.com/in/danieltrn/" target="_blank" >
+                <i class="fa-brands fa-linkedin fa-2xl"></i>            </a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about">
+        <!-- Profile Picture -->
+        <img src="Assets/Profile Pic/Niagra.png" alt="Me at Niagra Falls" width="600" height="600"> 
+        <!-- Introduction -->
+        <div id="intro">
+            <h1>👋Hi, I am <span>Daniel</span> Tran</h1>
+            <p>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Eligendi, unde exercitationem? 
+                Dolores facilis commodi soluta cumque vero dicta ex quisquam atque sed, aliquam expedita sit, vel veniam accusamus facere quo.
+            </p>    
+            <!-- Get Resunme button | View Project button -->
+            <div class="button">
+                <button class="lg-btn" id="resume-button">
+                    <i class="fa-regular fa-circle-down"></i>
+                    Get Resume
+                </button>
+                <a href="#projects">
+                    <button class="lg-btn"id="project-button">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Project
+                    </button>    
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <!-- Job Experience - Education -->
+        <div id="experience">
+            <div class="line"></div>
+            <!-- MDS timeline-->
+            <div class="timeline-mds">
+                <h3>Mar 2021</h3>
+                <h2 class="job-title">Head of R&D</h2>
+                <h3>Applied Math & Data Science Student Club</h3>
+                <!-- MDS achievements-->
+                <div class="wrapper">
+                    <ul class="achievement outer" id="mds">
+                        <li class="card" style="--delay:-1;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="number">3</p>
+                                <p class="subtitle">talk shows with 2 experts</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Hosted 3 internal talk shows about Introduction to Data 
+                                    Analytics and Basic SQL with 2 data experts
+                                </p>
+                            </div>
+                        </li>    
+                        <li class="card" style="--delay:0;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <p class="number">3</p>
+                                <p class="subtitle">4-week training series</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Developed 3 technical 
+                                    training series about intermediate Excel, 
+                                    Python, and SQL for 15 members in the whole club
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:1;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-comments"></i>
+                                <p class="number">3</p>
+                                <p class="subtitle">talk shows with 2 experts</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Hosted 3 internal talk shows about Introduction to Data 
+                                    Analytics and Basic SQL with 2 data experts
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:2;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-people-group"></i>
+                                <p class="number">7</p>
+                                <p class="subtitle">people in the team</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Standardized working procedure & initiated one-year vision for R&D team within 
+                                    3 weeks since its inception
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:2;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-award"></i>
+                                <p class="number"><span>#</span>5</p>
+                                <p class="subtitle">DA Camp Datathon</p>
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Applied Descriptive and Cohort Analysis 
+                                    to make a report about retention rate across channels in 100-day period
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>        
+            </div>
+            <!-- MDS decoration-->
+            <div class="circle" id="st">
+                <!-- <div class="line"></div> -->
+            </div>
+            <!-- MDS story-->
+            <div class="experience-card" id="mds">
+                <h2>Running a student club as a leader of R&D team</h2>
+                <h3><i class="fa-solid fa-location-dot"></i> Ho Chi Minh City, Vietnam</h3>
+                <p>
+                    Passionate about sharing my knowledge and inspiring Business students with the application of analytics skills, I co-founded the Applied Math and Data Science Student Club back in time when I was a freshman at Foreign Trade University in Vietnam. 
+                </p>
+                <p>
+                    I was honored to lead 7 people in the Research and Development team. Together, we researched, implemented, and tested a suitable training roadmap for current and next generation in our organization. We also integrated talk shows about Python, SQL, and Excel in our training sessions with industry experts.
+                </p>
+                <p>
+                    Within the first three weeks, the Operation team and I initiated and innovated the working procedure across departments from scratch. 
+                    In August 2021, our team was named Top-6 finalist of the DA Camp where we were glad to see our first small but meaningful achievement for our effective training programs.
+                </p>
+                <!-- MDS stacks-->
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/MDS/Microsoft_Office_Excel_(2019–present).svg.webp" alt="excel icon" width="59.4" height="55">
+                        <span class="tooltip">Excel</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/MDS/mysql-icon.png" alt="mysql icon" width="88" height="55">
+                        <span class="tooltip">MySQL</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/MDS/Python-logo-notext.svg.png" alt="python icon" width="53" height="55">
+                        <span class="tooltip">Python</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- S4V timeline-->
+            <div class="timeline-s4v">
+                <h3>May 2021</h3>
+                <h2 class="job-title">Content Writer Intern</h2>
+                <h3>Steam for Vietnam</h3>
+                <!-- S4V achievements-->
+                <div class="wrapper">
+                    <ul class="achievement outer" id="s4v">
+                        <li class="card" style="--delay:-1;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-flag"></i>
+                                <p class="number">4</p>
+                                <p class="subtitle">campaigns</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Utilized metrics on Google Analytics & Facebook Insights 
+                                    to measure blogs, website, and campaign performance
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:0;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-pen"></i>
+                                <p class="number">15</p>
+                                <p class="subtitle">1000 words SEO blogs</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Produced 15 1000-word SEO blogs for new English sites, 
+                                    Fundraising and Bootcamp promotion campaigns
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:1;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-flag"></i>
+                                <p class="number">4</p>
+                                <p class="subtitle">campaigns</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Utilized metrics on Google Analytics & Facebook Insights 
+                                    to measure blogs, website, and campaign performance
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:2;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <p class="number">5</p>
+                                <p class="subtitle">web pages</p>    
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Researched UX/UI templates & created content for Design team 
+                                    to revamp Homepage, About Us, 
+                                    and Donation page
+                                </p>
+                            </div>
+                        </li>
+                        <li class="card" style="--delay:2;">
+                            <div class="card-content">
+                                <i class="fa-solid fa-handshake"></i>
+                                <p class="number">1</p>
+                                <p class="subtitle">internal site</p>
+                            </div>
+                            <div class="card-overlay">
+                                <p>
+                                    Collaborated with Operation and Engineering team to 
+                                    build an internal Onboarding site using Google Site   
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>        
+            </div>                
+            <!-- S4V decoration-->
+            <div class="circle" id="nd">
+                <!-- <div class="line"></div> -->
+            </div>
+            <!-- S4V story-->
+            <div class="experience-card" id="s4v">
+                <h2>First internship at STEAM for Vietnam as a freshman</h2>
+                <h3><i class="fa-solid fa-location-dot"></i> Remote</h3>
+                <p>
+                    I have 6 months of previous experience working in a fast-paced and professional environment at STEAM for Vietnam where taking ownership, communication and collaboration across teams were the elements for success. 
+                </p>
+                <p>
+                    During the time, I  mainly produced contents for 4 different  Fundraising and Bootcamp promotion campaigns on both  social media  and company's blog page. At the end of the internship, I was recognized by my leader for being dedicated to quality and enthusiastic in every project I took.
+                </p>
+                <!-- S4V stacks-->
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/S4V/google-analytics-icon.png" alt="google analytics logo" width="55" height="55">
+                        <span class="tooltip">Google Analytics</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/S4V/Google_Sites_2020_Logo.svg.png" alt="google sites logo" width="42" height="55">
+                        <span class="tooltip">Google Sites</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/S4V/Canva_icon_2021.svg" alt="canva logo" width="55" height="55">
+                        <span class="tooltip">Canva</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/S4V/Wordpress_Blue_logo.png" alt="wordpress logo" width="55" height="55">
+                        <span class="tooltip">WordPress</span>
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/S4V/meta.png" alt="facebook insights logo" width="55" height="55">
+                        <span class="tooltip">Facebook Insights</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Seneca timeline-->
+            <div class="timeline-seneca">
+                <h3>Jan 2022</h3>
+                <h2 class="job-title">Computer Engineering Technology</h2>
+                <h3>Advanced Diploma</h3>
+                <!-- Seneca achievements-->
+                <div class="achievement">
+                    <p>                                
+                        <i class="fa-solid fa-award fa-2xl"></i>
+                        President's Honor List - Winter 22
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-award fa-2xl"></i>
+                        President's Honor List - Summer 22
+                    </p>
+                </div>
+            </div>    
+            <!-- Seneca decoration-->
+            <div class="circle" id="rd">
+                <!-- <div class="line"></div> -->
+            </div>
+            <!-- Seneca story-->
+            <div class="experience-card" id="seneca">
+                <h2>Travel to Canada</h2>
+                <h3><i class="fa-solid fa-location-dot"></i> Seneca College - Toronto ON</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia quidem quae labore nihil nemo repellendus eligendi quia possimus quisquam porro fuga, nostrum veniam, libero id est rem! Repudiandae, corrupti.
+                    Inventore itaque dolorum ea doloribus sint iste atque et, delectus minima earum autem quas error reiciendis quidem quo optio ipsa modi quisquam, corrupti iure? Ut nisi reiciendis ipsam amet mollitia!
+                </p>
+                <!-- Seneca stacks-->
+                <ul class="my-stacks">
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/C.png" alt="C language icon" width="50" height="55">
+                        <span class="tooltip">C</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/C++.png" alt="C++ logo" width="44" height="50">
+                        <span class="tooltip">C++</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/C_sharp.png" alt="C# logo" width="50" height="55">
+                        <span class="tooltip">C#</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/vmware.png" alt="VMware Workstation logo" width="55" height="55">
+                        <span class="tooltip">VMware</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/Windows_logo.png" alt="windows logo" width="55" height="55">
+                        <span class="tooltip">Windows OS</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/linux.png" alt="Linux logo" width="46" height="55">
+                        <span class="tooltip">Linux OS</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/Fedora_logo.svg.png" alt="Fedora logo" width="55" height="55">
+                        <span class="tooltip">Fedora OS</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/visio.jpg" alt="Visio logo" width="55" height="55">
+                        <span class="tooltip">MS Visio</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/TIA Portal.jpg" alt="TIA Portal logo" width="55" height="55">
+                        <span class="tooltip">TIA Portal</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/Siemens-Logo.png" alt="Siemens logo" width="98" height="55">
+                        <span class="tooltip">PADS Software</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/OrCAD_Logo.svg.png" alt="OrCAD logo" width="138" height="55">
+                        <span class="tooltip">OrCAD</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/Cisco-logo.png" alt="Cisco logo" width="105" height="55">
+                        <span class="tooltip">Packet Tracer</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/raspberry_pi.png" alt="raspberry pi logo" width="80" height="80">
+                        <span class="tooltip">Raspberry Pi</span>
+                    </li>
+                    <li>
+                        <img class="partner-logo" src="Assets/stacks/Seneca/Arm_mbed_logo.png" alt="MBED OS logo" width="101" height="55">
+                        <span class="tooltip">MBED OS</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Future timeline-->
+            <div class="timeline-future">
+                <h3>Aug 2024</h3>
+            </div>  
+            <!-- Future decoration-->
+            <div class="circle" id="fourth">
+                <!-- <div class="line"></div> -->
+            </div>
+            <!-- Future story-->
+            <div class="experience-card" id="future">
+                <h2>What's next?</h2>
+                <h3><i class="fa-solid fa-location-dot"></i> Toronto ON</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia quidem quae labore nihil nemo repellendus eligendi quia possimus quisquam porro fuga, nostrum veniam, libero id est rem! Repudiandae, corrupti.
+                    Inventore itaque dolorum ea doloribus sint iste atque et, delectus minima earum autem quas error reiciendis quidem quo optio ipsa modi quisquam, corrupti iure? Ut nisi reiciendis ipsam amet mollitia!
+                </p>
+            </div>
+        </div> 
+        
+
+        <!-- Skills & Certification -->
+        <div id="skills-certs">
+            <!-- Toggle Button -->
+            <div class="toggle-box" onclick="toggleContent()">
+                <div class="active" id="btn-skills">Skills</div>
+                <div id="btn-cert">Certificate</div>
+            </div>
+            <!-- Skills -->
+            <div id="skills" style="display: block;">
+                <h2>Skills</h2>
+                <!-- Development -->
+                <h3>Development</h3>
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-layout">
+                        <div class="progress-bar">
+                            <div class="solid-bar super-confident"></div>
+                        </div>
+                        <div class="skills super-confident">
+                            <ul class="my-stacks">
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/html.png" alt="html5 logo" width="41.8" height="48.8">
+                                    <span class="tooltip">HTML5</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/css.png" alt="css3 logo" width="41.8" height="48.8">
+                                    <span class="tooltip">CSS3</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/Bootstrap.png" alt="Bootstrap logo" width="61.2" height="48.8">
+                                    <span class="tooltip">Bootstrap</span>    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="percentage super-confident">90%</div>    
+                    </div>
+                    <div class="progress-layout">
+                        <div class="progress-bar">
+                            <div class="solid-bar confident"></div>
+                        </div>
+                        <div class="skills confident">
+                            <ul class="my-stacks">
+                                <li>
+                                    <img src="Assets/stacks/MDS/Python-logo-notext.svg.png" alt="python icon" width="47" height="48.8">
+                                    <span class="tooltip">Python</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/github.png" alt="GitHub logo" width="48.8" height="48.8">
+                                    <span class="tooltip">GitHub</span>    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="percentage confident">80%</div>
+                    </div>
+                    <div class="progress-layout">
+                        <div class="progress-bar">
+                            <div class="solid-bar intermediate"></div>
+                        </div>
+                        <div class="skills intermediate">
+                            <ul class="my-stacks">
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/JavaScript-logo.png" alt="javascript logo" width="48.8" height="48.8">
+                                    <span class="tooltip">JavaScript</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/Git.png" alt="Git logo" width="55" height="55">
+                                    <span class="tooltip">Git</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/Skills/Development/beautifulsoup-logo.png" alt="beautifulsoup-logo" width="164" height="70">
+                                    <span class="tooltip">Beautiful Soup</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/selenium-icon.png" alt="selenium-icon" width="50" height="48.8">
+                                    <span class="tooltip">Selenium</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="percentage intermediate">70%</div>
+                    </div>
+                    <div class="progress-layout">
+                        <div class="progress-bar">
+                            <div class="solid-bar basic"></div>
+                        </div>
+                        <div class="skills basic">
+                            <ul class="my-stacks">
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/React-icon.png" alt="React logo" width="56.1" height="48.8">
+                                    <span class="tooltip">React</span>    
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/nodejs.png" alt="NodeJS logo" width="43.3" height="48.8">
+                                    <span class="tooltip">NodeJS</span>    
+        
+                                </li>
+                                <li>
+                                    <img src="Assets/stacks/skills/Development/npm.png" alt="NPM logo" width="77." height="30">
+                                    <span class="tooltip">NPM</span>    
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="percentage basic">50%</div>
+                    </div>
+                </div>        
+                <!-- Analytics -->
+                <div class="analytics stack-container">
+                    <h3>Data Analytics</h3>
+                    <div class="progress-container">
+                        <div class="progress-layout">
+                            <div class="progress-bar">
+                                <div class="solid-bar super-confident"></div>
+                            </div>
+                            <div class="skills super-confident">
+                                <ul class="my-stacks">
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Pandas_logo.svg.png" alt="pandas logo" width="121" height="48.8">
+                                        <span class="tooltip">Pandas</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/NumPy_logo_2020.svg.png" alt="Numpy logo" width="122" height="55"> 
+                                        <span class="tooltip">Numpy</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/matplotlib.png" alt="matplotlib" width="130" height="26">
+                                        <span class="tooltip">Matplotlib</span>  
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/seaborn.svg" alt="Seaborn" width="130">
+                                        <span class="tooltip">Seaborn</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/plotly-Logo.png" alt="Plotly logo" width="48.8" height="48.8">
+                                        <span class="tooltip">Plotly</span>    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="percentage super-confident">90%</div>    
+                        </div>
+                        <div class="progress-layout">
+                            <div class="progress-bar">
+                                <div class="solid-bar confident"></div>
+                            </div>
+                            <div class="skills confident">
+                                <ul class="my-stacks">
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Power-BI-Logo.png" alt="Power BI logo" width="87" height="48.8">
+                                        <span class="tooltip">Power BI</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/MDS/Python-logo-notext.svg.png" alt="python icon" width="47" height="48.8">
+                                        <span class="tooltip">Python</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/MDS/Microsoft_Office_Excel_(2019–present).svg.webp" alt="excel icon" width="59.4" height="52.7">
+                                        <span class="tooltip">Excel</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/MDS/mysql-icon.png" alt="mysql icon" width="78" height="48.8">
+                                        <span class="tooltip">MySQL</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/postgresql.png" alt="postgresql" width="70" heihgt="70">
+                                        <span class="tooltip">PostgreSQL</span>    
+                                    </li>
+            
+                                </ul>
+                            </div>
+                            <div class="percentage confident">80%</div>
+                        </div>
+                        <div class="progress-layout">
+                            <div class="progress-bar">
+                                <div class="solid-bar intermediate"></div>
+                            </div>
+                            <div class="skills intermediate">
+                                <ul class="my-stacks">
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Databricks_Logo.png" alt="Databricks Notebook" width="114" height="60">
+                                        <span class="tooltip">DataBricks Notebook</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Jupyter_logo.svg.png" alt="Jupter Notebook logo" width="52" height="60">
+                                        <span class="tooltip">Jupyter Notebook</span>    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="percentage intermediate">70%</div>
+                        </div>
+                        <div class="progress-layout">
+                            <div class="progress-bar">
+                                <div class="solid-bar basic"></div>
+                            </div>
+                            <div class="skills basic">
+                                <ul class="my-stacks">
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Scikit_learn_logo_small.svg.png" alt="Scikit-learn logo" width="91" height="48.8">
+                                        <span class="tooltip">Scikit-learn</span>    
+                                    </li>
+                                    <li>
+                                        <img src="Assets/stacks/skills/Analytics/Apache_Spark_logo.svg.png" alt="Apache Spark logo" width="94" height="48.8">
+                                        <span class="tooltip">PySpark | Spark SQL</span>    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="percentage basic">50%</div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <!-- Certification -->
+            <div id="certification" style="display: none;">
+                <div class="certification-container">
+                    <a href="https://www.linkedin.com/learning/certificates/60f8b47adfb464c4f9e5834c7bdf23c8ef6de81e879779f435abe6eb24f9d5ae?" target="_blank">
+                        <div class="badge linkedin">
+                            <img src="Assets/Certificate/Issuers/Linkedin.png" alt="Linkedin logo">
+                            <h3>Data Visualization <br> Python with Dash</h3>
+                            <p>Mar 2023</p>
+                        </div>                        
+                    </a>
+                    <a href="https://www.credential.net/3001abed-d8ea-40a2-bc6e-e74767c2670c" target="_blank">
+                        <div class="badge maven">
+                            <img src="Assets/Certificate/Issuers/Maven.png" alt="Maven Analytics logo" width="70" height="70">
+                            <h3>MySQL <br> Data Analysis</h3>
+                            <p>Mar 2023</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/learning/certificates/80f362b7b672e9f3cb2e5f902a8cb070c82e4516c806944cee5f1d2a0a53354f" target="_blank">
+                        <div class="badge linkedin">
+                            <img src="Assets/Certificate/Issuers/Linkedin.png" alt="Linkedin logo" width="70" height="70">
+                            <h3>Power BI <br> Modeling with DAX</h3>
+                            <p>Mar 2023</p>
+                        </div>    
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-786f8864-ea83-4190-b31c-19d6c51b7a07/" target="_blank">
+                        <div class="badge udemy">
+                            <img src="Assets/Certificate/Issuers/Udemy-Logo.png" alt="Udemy loo" width="125" height="70">
+                            <h3>Power BI Desktop</h3>
+                            <p>Jan 2023</p>
+                        </div>
+                    </a>
+                    <a href="https://learn.365datascience.com/certificates/CC-70FC7CF255/" target="_blank">
+                        <div class="badge three65">
+                            <img src="Assets/Certificate/Issuers/three_65_ds.png" alt="365 Data Science Logo" width="70"
+                                height="70">
+                            <h3>Git and GitHub</h3>
+                            <p>Nov 2022</p>
+                        </div>    
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/ea48a7f2765d" target="_blank">
+                        <div class="badge hackerrank">
+                            <img src="Assets/Certificate/Issuers/Hackerrank.png" alt="Hackerrank Logo" width="140" height="70">
+                            <h3>Python Basic</h3>
+                            <p>Nov 2022</p>
+                        </div>    
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/d95e49c07d19" target="_blank">
+                        <div class="badge hackerrank">
+                            <img src="Assets/Certificate/Issuers/Hackerrank.png" alt="Hackerrank Logo" width="140" height="70">
+                            <h3>SQL intermediate</h3>
+                            <p>Nov 2022</p>
+                        </div>    
+                    </a>
+                    <a href="https://learn.365datascience.com/certificates/CC-A07CC1828C/" target="_blank">
+                        <div class="badge three65">
+                            <img src="Assets/Certificate/Issuers/three_65_ds.png" alt="365 Data Science Logo" width="70"
+                                height="70">
+                            <h3>Statistics</h3>
+                            <p>Nov 2022</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Projects Container -->
+        <div class="projects-container">
+            <!-- Danny's Dinner Challenge -->
+            <div class="project-box">
+                <img class="project-cover" src="https://8weeksqlchallenge.com/images/case-study-designs/1.png" alt="Danny's Dinner Challenge Poster" width="400" height="400">
+                <div class="project-top">
+                    <h3>Danny's Dinner Challenge</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/Case-Study-1-Danny-s-Dinner" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">MySQL</span>
+                    <span class="badge rounded-pill text-bg-secondary">EDA</span>
+                    <span class="badge rounded-pill text-bg-secondary">Windows Functions</span>
+                    <span class="badge rounded-pill text-bg-secondary">CTE</span>
+                    <span class="badge rounded-pill text-bg-secondary">Join</span>
+                    <span class="badge rounded-pill text-bg-secondary">Datetime</span>
+                    <span class="badge rounded-pill text-bg-secondary">Case-When</span>
+                </div>
+                <div class="description">
+                    <p>
+                        Danny wants to use the data to answer a few simple questions about his customers,
+                        especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help 
+                        him deliver a better and more personalised experience for his loyal customers.
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/MDS/mysql-icon.png" alt="mysql icon" width="78" height="48.8">
+                        <span class="tooltip">MySQL</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pizza Runner Challenge -->
+            <div class="project-box">
+                <img class="project-cover" src="https://miro.medium.com/v2/resize:fit:728/1*G4F6C5fyyJaMHFvVbhVqbg.png" alt="Pizza Runner Challenge Poster" width="400" height="400">
+                <div class="project-top">
+                    <h3>Pizza Runner Challenge</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/Case-Study-2-Pizza-Runner" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">PostgreSQL</span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Cleaning</span>
+                    <span class="badge rounded-pill text-bg-secondary">EDA</span>
+                    <span class="badge rounded-pill text-bg-secondary">Windows Functions</span>
+                    <span class="badge rounded-pill text-bg-secondary">CTE</span>
+                    <span class="badge rounded-pill text-bg-secondary">Join</span>
+                    <span class="badge rounded-pill text-bg-secondary">Datetime</span>
+                    <span class="badge rounded-pill text-bg-secondary">Case-When</span>
+                </div>
+                <div class="description">
+                    <p>
+                        Danny just lauchned Pizza Runner and started recruiting "runners" to deliver 
+                        fresh pizza from the his house (aka "Headquater"). He has a specialist 
+                        design an entity relationship diagram of the database related to his business but it 
+                        requires further assistance to clean data and apply some basic calculations so he can better 
+                        direct his runners and optimise Pizza Runner's operatioon.
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/postgresql.png" alt="postgresql" width="70" heihgt="70">
+                        <span class="tooltip">PostgreSQL</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Data Science Salary Analysis -->
+            <div class="project-box">
+                <img class="project-cover" src="Assets/Project Cover/DS Salary.png" alt="" width="400" height="400">
+                <div class="project-top">
+                    <h3>Data Science Salary Analysis</h3>
+                    <div class="view-project">
+                        <a href="https://www.kaggle.com/code/danielggak/eda-plotly-data-science-job-salary" target="_blank">
+                            <i class="fa-brands fa-kaggle fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">Pandas Multi-Index</span>
+                    <span class="badge rounded-pill text-bg-secondary">Pandas Pivot Table</span>
+                    <span class="badge rounded-pill text-bg-secondary">Plotly Graph Objects</span>
+                    <span class="badge rounded-pill text-bg-secondary">Plotly Subplots</span>
+                    <span class="badge rounded-pill text-bg-secondary">Plotly Express </span>
+                    <span class="badge rounded-pill text-bg-secondary">EDA</span>
+                    <span class="badge rounded-pill text-bg-secondary">Visualization</span>
+                </div>
+                <div class="description">
+                    <p>
+                        Data Science Job Salaries survey was taken from 607 people with different job levels,
+                        employement types, and working modes from different company sizes across USA and many other 
+                        countries between 2020 and 2022.
+
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Pandas_logo.svg.png" alt="pandas logo" width="121" height="48.8">
+                        <span class="tooltip">Pandas</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/plotly-Logo.png" alt="Plotly logo" width="48.8" height="48.8">
+                        <span class="tooltip">Plotly</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- AW_Report -->
+            <div class="project-box">
+                <img class="project-cover" src="Assets/Project Cover/AW_Report.png" alt="AW Sales Report" width="400" heihgt="400">
+                <div class="project-top">
+                    <h3>Maven Markter Report</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/AW_Sales_Report/blob/main/AW_Sales_Report.pdf" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">Power BI</span>
+                    <span class="badge rounded-pill text-bg-secondary">Power Query </span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Trasformation</span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Cleaning</span>
+                    <span class="badge rounded-pill text-bg-secondary">Relational Data Models</span>
+                    <span class="badge rounded-pill text-bg-secondary">DAX Measures</span>
+                    <span class="badge rounded-pill text-bg-secondary">Visualization</span>
+                </div>
+                <div class="description">
+                    <p>
+                        Data Science Job Salaries survey was taken from 607 people with different job levels,
+                        employement types, and working modes from different company sizes across USA and many other 
+                        countries between 2020 and 2022.
+
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Power-BI-Logo.png" alt="Power BI logo" width="87" height="48.8">
+                        <span class="tooltip">Power BI</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Biotech Attrition Analysis -->
+            <div class="project-box">
+                <img class="project-cover" src="https://storage.googleapis.com/kaggle-datasets-images/2807217/4843681/b7aa724526c379f114bb447482b93e1e/dataset-cover.png?t=2023-03-31-16-51-59" alt="" width="400" height="400">
+                <div class="project-top">
+                    <h3>Summit Biotech Attrition Analysis</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/Summit_Biotech_Attrition_Analysis" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                        <a href="https://www.kaggle.com/code/danielggak/biotech-attrition-analysis" target="_blank">
+                            <i class="fa-brands fa-kaggle fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">Pandas Multi-Index</span>
+                    <span class="badge rounded-pill text-bg-secondary">Pandas Merge</span>
+                    <span class="badge rounded-pill text-bg-secondary">Pandas Pivot</span>
+                    <span class="badge rounded-pill text-bg-secondary">Plotly Express </span>
+                    <span class="badge rounded-pill text-bg-secondary">Matplotlib</span>
+                    <span class="badge rounded-pill text-bg-secondary">Seaborn</span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Cleaning</span>
+                    <span class="badge rounded-pill text-bg-secondary">EDA</span>
+                    <span class="badge rounded-pill text-bg-secondary">Visualization</span>
+                </div>
+                <div class="description">
+                    <p>
+                        🧬 The datasets depicts the attrition view at Biotech company in 2021.<br>
+                        🎯 Many aspects of an employee should be analyzed such as their demographics or their company's profiles. You can either create visualization to provide the
+                        insights drawn from the analysis or can create a model that could best explain 
+                        the attrition rate of the company.<br>
+                        ⭐ Credit: This dataset is originally from BOLT UBC Hackathon (April 2022).
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Pandas_logo.svg.png" alt="pandas logo" width="121" height="48.8">
+                        <span class="tooltip">Pandas</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/matplotlib.png" alt="matplotlib" width="130" height="26">
+                        <span class="tooltip">Matplotlib</span>  
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/seaborn.svg" alt="Seaborn" width="130">
+                        <span class="tooltip">Seaborn</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/plotly-Logo.png" alt="Plotly logo" width="48.8" height="48.8">
+                        <span class="tooltip">Plotly</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Used Car Prediction -->
+            <div class="project-box">
+                <img class="project-cover" src="https://www.ctvnews.ca/polopoly_fs/1.3631911.1584737347!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg" alt="" width="400" height="400">
+                <div class="project-top">
+                    <h3>Used Car Prediction</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/Machine-Learning/blob/main/Linear%20Regression%20-%20Used%20Car%20Price%20Prediction.pdf" target="_blank">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">Pandas </span>
+                    <span class="badge rounded-pill text-bg-secondary">Seaborn </span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Cleaning</span>
+                    <span class="badge rounded-pill text-bg-secondary">Ordinary Least Square</span>
+                    <span class="badge rounded-pill text-bg-secondary">Log Transformation </span>
+                    <span class="badge rounded-pill text-bg-secondary">Muticolinearity</span>
+                    <span class="badge rounded-pill text-bg-secondary">Dummy variables</span>
+                    <span class="badge rounded-pill text-bg-secondary">Standardization</span>
+                    <span class="badge rounded-pill text-bg-secondary">Train Test Split</span>
+                    <span class="badge rounded-pill text-bg-secondary">Linear Regression</span>
+                    <span class="badge rounded-pill text-bg-secondary">R-Squared</span>
+                </div>
+                <div class="description">
+                    <p>
+                        🎯 Predict the price of different used cars using Multiple Linear Regression Model
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/NumPy_logo_2020.svg.png" alt="Numpy logo" width="122" height="55"> 
+                        <span class="tooltip">Numpy</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Pandas_logo.svg.png" alt="pandas logo" width="121" height="48.8">
+                        <span class="tooltip">Pandas</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/matplotlib.png" alt="matplotlib" width="130" height="26">
+                        <span class="tooltip">Matplotlib</span>  
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/seaborn.svg" alt="Seaborn" width="130">
+                        <span class="tooltip">Seaborn</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Scikit_learn_logo_small.svg.png" alt="Scikit-learn logo" width="91" height="48.8">
+                        <span class="tooltip">Scikit-learn</span>    
+                    </li>
+                </ul>
+            </div>
+
+            <!-- US House Price Prediction -->
+            <div class="project-box">
+                <img class="project-cover" src="Assets/Project Cover/US house price prediction.png" alt="US House Price Prediction" width="400" height="400">
+                <div class="project-top">
+                    <h3>US House Price Predicction</h3>
+                    <div class="view-project">
+                        <a href="https://github.com/Daniel-Tran-247/Machine-Learning/blob/main/US_HousePrice_Prediction.pdf">
+                            <i class="fa-brands fa-github fa-2xl"></i>         
+                        </a>
+                    </div>
+                </div>
+                <div class="tag">
+                    <span class="badge rounded-pill text-bg-secondary">Pandas </span>
+                    <span class="badge rounded-pill text-bg-secondary">Seaborn </span>
+                    <span class="badge rounded-pill text-bg-secondary">Data Cleaning</span>
+                    <span class="badge rounded-pill text-bg-secondary">Ordinary Least Square</span>
+                    <span class="badge rounded-pill text-bg-secondary">Log Transformation </span>
+                    <span class="badge rounded-pill text-bg-secondary">Muticolinearity</span>
+                    <span class="badge rounded-pill text-bg-secondary">Dummy variables</span>
+                    <span class="badge rounded-pill text-bg-secondary">Standardization</span>
+                    <span class="badge rounded-pill text-bg-secondary">Train Test Split</span>
+                    <span class="badge rounded-pill text-bg-secondary">Linear Regression</span>
+                    <span class="badge rounded-pill text-bg-secondary">R-Squared</span>
+                </div>
+                <div class="description">
+                    <p>
+                        🎯 Predict the Price of the US House using Multiple Linear Regression Model
+                    </p>
+                </div>
+                <ul class="my-stacks">
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/NumPy_logo_2020.svg.png" alt="Numpy logo" width="122" height="55"> 
+                        <span class="tooltip">Numpy</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Pandas_logo.svg.png" alt="pandas logo" width="121" height="48.8">
+                        <span class="tooltip">Pandas</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/matplotlib.png" alt="matplotlib" width="130" height="26">
+                        <span class="tooltip">Matplotlib</span>  
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/seaborn.svg" alt="Seaborn" width="130">
+                        <span class="tooltip">Seaborn</span>    
+                    </li>
+                    <li>
+                        <img src="Assets/stacks/skills/Analytics/Scikit_learn_logo_small.svg.png" alt="Scikit-learn logo" width="91" height="48.8">
+                        <span class="tooltip">Scikit-learn</span>    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <h2>Blogs</h2>
+
+        <div class="blogs-container">
+            <div class="blog-box">
+                <img src="https://danieltransblog.files.wordpress.com/2022/04/thumbnail_ds_post.png" alt="Blog Cover Image">
+                <div class="blog-top">
+                    <h3>3 Things I Wish I Knew</h3>
+                    <div class="subtitle">
+                        <p>April 4th 2022</p>
+                        <div class="tag">
+                            <span class="badge rounded-pill text-bg-secondary">Data Analytics</span>
+                        </div>        
+                    </div>
+                </div>
+                <div class="meta">
+                    It has been almost two years since I started to learn Data Science (DS) 
+                    from scratch. As a beginner, I understand challenges you’re facing along the path. 
+                    I’m here to share with you 3 things I wish I knew at the beginning of this 
+                    journey. Hope it helps you out!
+                </div>
+                <div class="author">
+                    <img src="Assets/Profile Pic/daniblog.png" alt="">
+                    Daniel Tran
+                </div>
+            </div>
+            
+            <div class="blog-box">
+                <img src="https://danieltransblog.files.wordpress.com/2022/04/thumbnail_ds_post.png" alt="Blog Cover Image">
+                <div class="blog-top">
+                    <h3>3 Things I Wish I Knew</h3>
+                    <div class="subtitle">
+                        <p>April 4th 2022</p>
+                        <div class="tag">
+                            <span class="badge rounded-pill text-bg-secondary">Data Analytics</span>
+                        </div>        
+                    </div>
+                </div>
+                <div class="meta">
+                    It has been almost two years since I started to learn Data Science (DS) 
+                    from scratch. As a beginner, I understand challenges you’re facing along the path. 
+                    I’m here to share with you 3 things I wish I knew at the beginning of this 
+                    journey. Hope it helps you out!
+                </div>
+                <div class="author">
+                    <img src="Assets/Profile Pic/daniblog.png" alt="">
+                    Daniel Tran
+                </div>
+            </div>
+
+            <div class="blog-box">
+                <img src="https://danieltransblog.files.wordpress.com/2022/04/thumbnail_ds_post.png" alt="Blog Cover Image">
+                <div class="blog-top">
+                    <h3>3 Things I Wish I Knew</h3>
+                    <div class="subtitle">
+                        <p>April 4th 2022</p>
+                        <div class="tag">
+                            <span class="badge rounded-pill text-bg-secondary">Data Analytics</span>
+                        </div>        
+                    </div>
+                </div>
+                <div class="meta">
+                    It has been almost two years since I started to learn Data Science (DS) 
+                    from scratch. As a beginner, I understand challenges you’re facing along the path. 
+                    I’m here to share with you 3 things I wish I knew at the beginning of this 
+                    journey. Hope it helps you out!
+                </div>
+                <div class="author">
+                    <img src="Assets/Profile Pic/daniblog.png" alt="">
+                    Daniel Tran
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        
+    </section>
+
+    <section id="test">
+
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2023 Daniel Tran. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>    
+    <script src="https://kit.fontawesome.com/63f1ae4567.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <ul class="my-stacks">
+    <li>
+        <img src="Assets/stacks/skills/Development/html.png" alt="html5 logo" width="41.8" height="48.8">
+        <span class="tooltip">HTML5</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/css.png" alt="css3 logo" width="41.8" height="48.8">
+        <span class="tooltip">CSS3</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/JavaScript-logo.png" alt="javascript logo" width="48.8" height="48.8">
+        <span class="tooltip">JavaScript</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/Bootstrap.png" alt="Bootstrap logo" width="61.2" height="48.8">
+        <span class="tooltip">Bootstrap</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/React-icon.png" alt="React logo" width="56.1" height="48.8">
+        <span class="tooltip">React</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/nodejs.png" alt="NodeJS logo" width="43.3" height="48.8">
+        <span class="tooltip">NodeJS</span>    
+
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/npm.png" alt="NPM logo" width="77." height="30">
+        <span class="tooltip">NPM</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/MDS/Python-logo-notext.svg.png" alt="python icon" width="47" height="48.8">
+        <span class="tooltip">Python</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/Git.png" alt="Git logo" width="55" height="55">
+        <span class="tooltip">Git</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/github.png" alt="GitHub logo" width="48.8" height="48.8">
+        <span class="tooltip">GitHub</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/Skills/Development/beautifulsoup-logo.png" alt="beautifulsoup-logo" width="164" height="70">
+        <span class="tooltip">Beautiful Soup</span>    
+    </li>
+    <li>
+        <img src="Assets/stacks/skills/Development/selenium-icon.png" alt="selenium-icon" width="50" height="48.8">
+        <span class="tooltip">Selenium</span>
+    </li>
+</ul> -->
+
+
+
+<!-- <div class="my-stacks partner-carousel"> -->
+    <!-- <div class="partner-carousel-container"> -->
+        <!-- <ul class="partner-carousel-track">
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C.png" alt="C language icon" width="64" height="70">
+                <span class="tooltip">C</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C++.png" alt="C++ logo" width="62" height="70">
+                <span class="tooltip">C++</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C_sharp.png" alt="C# logo" width="64" height="70">
+                <span class="tooltip">C#</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/vmware.png" alt="VMware Workstation logo" width="70" height="70">
+                <span class="tooltip">VMware</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Windows_logo.png" alt="windows logo" width="70" height="70">
+                <span class="tooltip">Windows OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/linux.png" alt="Linux logo" width="59" height="70">
+                <span class="tooltip">Linux OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Fedora_logo.svg.png" alt="Fedora logo" width="70" height="70">
+                <span class="tooltip">Fedora OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/visio.jpg" alt="Visio logo" width="70" height="70">
+                <span class="tooltip">MS Visio</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Siemens-Logo.png" alt="Siemens logo" width="125" height="70">
+                <span class="tooltip">PADS Software</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/OrCAD_Logo.svg.png" alt="OrCAD logo" width="175" height="70">
+                <span class="tooltip">OrCAD</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Cisco-logo.png" alt="Cisco logo" width="133" height="70">
+                <span class="tooltip">Packet Tracer</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/TIA Portal.jpg" alt="TIA Portal logo" width="70" height="70">
+                <span class="tooltip">TIA Portal</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/raspberry_pi.png" alt="raspberry pi logo" width="100" height="100">
+                <span class="tooltip">Raspberry Pi</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Arm_mbed_logo.png" alt="MBED OS" logo" width="128" height="70">
+                <span class="tooltip">MBED OS</span>
+            </li> 
+            Add more logo images as needed
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C.png" alt="C language icon" width="64" height="70">
+                <span class="tooltip">C</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C++.png" alt="C++ logo" width="62" height="70">
+                <span class="tooltip">C++</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/C_sharp.png" alt="C# logo" width="64" height="70">
+                <span class="tooltip">C#</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/vmware.png" alt="VMware Workstation logo" width="70" height="70">
+                <span class="tooltip">VMware</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Windows_logo.png" alt="windows logo" width="70" height="70">
+                <span class="tooltip">Windows OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/linux.png" alt="Linux logo" width="59" height="70">
+                <span class="tooltip">Linux OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Fedora_logo.svg.png" alt="Fedora logo" width="70" height="70">
+                <span class="tooltip">Fedora OS</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/visio.jpg" alt="Visio logo" width="70" height="70">
+                <span class="tooltip">MS Visio</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Siemens-Logo.png" alt="Siemens logo" width="125" height="70">
+                <span class="tooltip">PADS Software</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/OrCAD_Logo.svg.png" alt="OrCAD logo" width="175" height="70">
+                <span class="tooltip">OrCAD</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Cisco-logo.png" alt="Cisco logo" width="133" height="70">
+                <span class="tooltip">Packet Tracer</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/TIA Portal.jpg" alt="TIA Portal logo" width="70" height="70">
+                <span class="tooltip">TIA Portal</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/raspberry_pi.png" alt="raspberry pi logo" width="100" height="100">
+                <span class="tooltip">Raspberry Pi</span>
+            </li>
+            <li>
+                <img class="partner-logo" src="Assets/stacks/Seneca/Arm_mbed_logo.png" alt="MBED OS" logo" width="128" height="70">
+                <span class="tooltip">MBED OS</span>
+            </li>
+        </ul>
+    </div>
+</div>        
